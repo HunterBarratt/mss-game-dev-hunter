@@ -1,0 +1,23 @@
+<h3> Version number: 0.1.0 <h/3>
+<h1 align=center> T3A13-Functions-Hunter.html </h1>
+
+<script>
+function myBasicFun(){
+	//document.getElementById('mySpan01').innerHTML = "wow"
+}
+function myAdvancedFun(x,y){
+	return x*y
+}
+</script>
+
+<input id="myText01" type=text value=3 ><br><br>
+<input id="myText02" type=text value=10 ><br><br>
+<input type=button value="Run Calculation" onclick="{
+	x = document.getElementById('myText01').value
+	y = document.getElementById('myText02').value
+	document.getElementById('mySpan01').innerHTML = myAdvancedFun(x,y)
+	//alert('Function working as normal')
+	myBasicFun()
+}"><br><br>
+
+<h4> Result: <span id="mySpan01" >___</Span><br><br></h4>
