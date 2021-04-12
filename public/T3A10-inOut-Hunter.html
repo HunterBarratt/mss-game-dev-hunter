@@ -1,0 +1,23 @@
+<h1 align=center>T3A10-inOut-Hunter.html</h1>
+
+This variable is equal to X
+<input id="mytext01" type=text value=3 ><br><br>
+
+<input type=button value="Show X" onclick="{
+	x = document.getElementById('mytext01').value
+	document.getElementById('myspan01').innerHTML = 'X is '+x
+
+}"><br><br>
+
+<span id="myspan01" >...</Span><br><br>
+
+This variable is equal to X squared
+<input id="mytext02" type=text value=3 ><br><br>
+
+<input type=button value="Square X" onclick="{
+	x = document.getElementById('mytext02').value
+	document.getElementById('myspan02').innerHTML = x+' <b>squared</b> is ' + x*x
+
+}"><br><br>
+
+<span id="myspan02" >...</Span><br><br>
