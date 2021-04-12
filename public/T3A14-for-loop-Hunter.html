@@ -1,0 +1,16 @@
+<input type="number" id="myTextLoop" value="10" size="10">
+
+
+<input id="myLoop1" type="button" value="For Loop" onclick="{
+                                                               
+    document.getElementById('mySpan1').innerHTML = ''  
+                                                               
+    for (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){   
+                                                               
+       document.getElementById('mySpan1').innerHTML += 'Loop #'+ myLoop+'<br>'  
+                                                               
+    }
+                                                               
+}"><br><br>
+
+<div id='mySpan1'>...</div><br>
