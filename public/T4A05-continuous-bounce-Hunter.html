@@ -1,4 +1,4 @@
-V1.1
+V1.2
 
 <script>
 
@@ -6,7 +6,7 @@ V1.1
 // Global variables works anywhere in your code
 
 document.myXmove = 5   // amount it moves in pixels
-document.myYmove = 7
+document.myYmove = -7
 
 document.myXspeed = 50 // speed as a delay in milliseconds bigger is slower
 document.myYspeed = 20 
@@ -49,7 +49,7 @@ if (parseInt(document.getElementById('mySpan01').style.top) < 10) {  // if we hi
     document.myYmove = document.myYmove * -1   // then bounce
 }
 
-if (parseInt(document.getElementById('mySpan01').style.top) + 65 > window.innerWidth) {  // if we hit the right wall
+if (parseInt(document.getElementById('mySpan01').style.top) + 65 > window.innerHeight) {  // if we hit the right wall
     document.myYmove = document.myYmove * -1   // then bounce
 }
 
