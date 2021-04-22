@@ -44,20 +44,12 @@ if (parseInt(document.getElementById('mySpan01').style.left) + 65 > window.inner
 }
 
 	
-	
-if (parseInt(document.getElementById('mySpan01').style.top) < 10) {  // if we hit the left wall
-    document.myYmove = document.myYmove * -1   // then bounce
-}
-
-if (parseInt(document.getElementById('mySpan01').style.top) + 65 > window.innerWidth) {  // if we hit the right wall
-    document.myYmove = document.myYmove * -1   // then bounce
-}
 
 
 // end of bounce code
 
   if(myHitOther('mySpan01', 'mySpan02')){
-    document.getElementById('mySpan02').style.left = '-400px'
+    document.getElementById('mySpan02').style.left = '-0px'
     // lets try a bounce
     document.myXmove = document.myXmove * -1
   }
